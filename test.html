@@ -64,3 +64,499 @@
 
     </div>
 </div>
+
+
+
+
+
+
+/*About*/
+#about {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #f1e9de;
+  
+}
+
+#about .abt-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#about .abt-grid .abt-img img {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width:50%;
+}
+
+.abt .abt-grid .abt-content {
+  margin-top: 120px;
+}
+
+#about .abt-grid .abt-content header{
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+#about .abt-grid .abt-content h1{
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+#about .abt-grid .abt-content p{
+  font-size: 1.7rem ;
+  font-weight: 300;
+  padding: 0 0 3rem 0;
+}
+
+/*Services*/
+.services{
+  width: 100%;
+  height: 100vh;
+  background:url('./images/makeup-t.webp') no-repeat center center/cover;
+  position: relative;
+}
+
+.services::before{
+  content:'';
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.6;
+}
+.services *{
+  position: relative;
+  z-index: 999;
+}
+
+
+.header{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 40px;
+  color: #f1e9de;
+}
+
+.services .service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 50px;
+  gap: 10px;
+}
+
+.services .service-grid .service-box{
+  width: 90%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  background-color:#fff;
+  border-radius: 8px;
+}
+
+.services .service-grid .service-box .service-img img{
+  width: 100%;
+  height: 250px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.services .service-grid .service-box .service-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.services .service-grid .service-box .service-content h2 {
+  color: #FF6A9A;
+  font-size: 25px;
+}
+
+.services .service-grid .service-box .service-content p {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+
+.service-btn{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.service-btn a {
+  
+}
+
+
+
+.gallery {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery .first-box header{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--primary);
+  padding: 70px 0 40px 0;
+
+}
+.gallery .second-box header{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--primary);
+  padding: 70px 0 40px 0;
+}
+
+.gallery .first-box .first-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-gap: 20px;
+  grid-auto-rows: 300px;
+  
+}
+
+.gallery .first-box .first-grid .grid-img img,
+.gallery .second-box .second-grid .grid-img img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.gallery .second-box .second-grid .grid-img{
+  display: block;
+  position: relative;
+}
+
+.item-2 {
+  grid-row: span 2;
+}
+
+.gallery-continue{
+  margin-top: 100px;
+  background-color:#FF6A9A;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#slider-showcase {
+  padding-bottom: 60px;
+}
+
+.gallery-continue::before{
+  content:'';
+  background-color:rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+.arrow .swiper-prev,
+.arrow .swiper-next {
+position: absolute;
+padding: 0.5rem 0.7rem;
+background-color: #fff;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.arrow .swiper-prev {
+top: 50%;
+transform: translateY(-50%);
+left: 20px;
+color: var(--primary);
+}
+
+.arrow .swiper-next {
+top: 50%;
+transform: translateY(-50%);
+right: 20px;
+color: var(--primary);
+}
+
+.slide-box {
+flex-shrink: 0;
+width: 400px;
+height: 100%;
+position: relative;
+transition-property: transform;
+}
+
+.slide-box img {
+width: 400px;
+height: 400px;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.overlay {
+  transform:translatey(20px);
+  transition: all 0.3s ease;
+}
+
+.overlay:hover{
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.overlay-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-flex h3 {
+  margin-bottom: 25px;
+}
+
+
+.overlay:hover {
+  transform: translatey(0);
+}
+
+image-blur{
+  backdrop-filter: blur(5px);
+}
+
+#slider-showcase header{
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0 60px 0;
+  z-index: 9999;
+  position: relative;
+  font-weight: 700;
+}
+
+.slide-container {
+  display: flex;
+  min-width: 95%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+#slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+ <!--<div id="services" class="services">
+      <div class="container">
+        <header class="header">Our Services</header>
+        <div class="service-grid">
+          <div class="service-box">
+            <div class="service-img">
+              <img src="./images/bridal.jpg" alt="">
+            </div>
+            <div class="service-content">
+              <h2>Bridal Make-UP</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            
+          </div>
+          <div class="service-box">
+            <div class="service-img">
+              <img src="./images/conventional.jpg" alt="">
+            </div>
+            <div class="service-content">
+              <h2>Conventional Make-UP</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="service-box">
+            <div class="service-img">
+              <img src="./images/Causual.jpg" alt="">
+            </div>
+            <div class="service-content">
+              <h2>Causual Make-UP</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="service-btn">
+          <a href="" class="btn btn-pry">Book Now</a>
+        </div>
+       
+      </div>
+    </div>
+    <div class="gallery" id="gallery">
+      <div class="container-3">
+        <div class="first-box">
+          <header>Work & showcase</header>
+          <div class="first-grid">
+            <div class="grid-img item-1"><img src="./images/IMG_20190105_111650.jpg" alt=""></div>
+            <div class="grid-img item-2"><img src="./images/yetty.jfif" alt=""></div>
+            <div class="grid-img item-3"><img src="./images/yettyme.jfif" alt=""></div>
+            
+            <div class="grid-img item-2"><img src="./images/yettyme.jfif" alt=""></div>
+            <div class="grid-img item-2"><img src="./images/yetty.jfif" alt=""></div> 
+            <div class="grid-img item-6"><img src="./images/IMG_20190105_111650.jpg" alt=""></div>
+                 
+          </div>
+        </div>
+      </div>
+    </div>
+
+  -->
+
+
+  <div id="slider">  
+    <div class="slides">  
+      <img src="./images/beautifulrose.jpg" width="100%" class="bg-1"/>
+    </div>
+     
+     <div class="slides">  
+       <img src="./images/lonely-walkway.jfif" width="100%" class="bg-2"/>
+     </div>
+     
+     <div class="slides">  
+       <img src="./images/pocophone.webp" width="100%" class="bg-3"/>
+     </div> 
+     
+     <div class="slides">  
+       <img src="./images/photo-1542908945-2d06f969cc61.jfif" width="100%" class="bg-4"/>
+     </div> 
+     
+     <div class="slides">  
+       <img src="./images/solarsystem.jpg" width="100%" class="bg-5"/>
+     </div>  
+     
+     <div id="dot">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+     </div>
+</div>
+
+  
+  
+  
+
+@keyframes fade{
+  from{
+    opacity:0.4;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+.bg-1 {
+  background: #ff216a;
+}
+
+.bg-2 {
+  background:darkcyan;
+}
+
+.bg-3 {
+  background:brown;
+}
+
+.bg-4 {
+  background:chartreuse;
+}
+
+.bg-5 {
+  background:mediumblue;
+}
+
+#slider{
+  margin:0 auto;
+  width:100%;
+  height: 90vh;
+  overflow:hidden;
+  position: relative;
+  top: 80px;
+  margin-bottom: 30px;
+}
+
+.slides{
+  overflow:hidden;
+  animation-name:fade;
+  animation-duration:1s;
+  display:none;
+}
+
+.slides img{
+  width:100%;
+  height: 100vh;
+}
+
+#dot{
+  margin:0 auto;
+  text-align:center;
+}
+.dot{
+  display:inline-block;
+  border-radius:50%;
+  background:#d3d3d3;
+  padding:8px;
+  margin:10px 5px;
+}
+
+.activate{
+  background:black;
+}
+
+@media (max-width:567px){
+  #slider{
+    width:100%;
+
+  }
+
+  
+
+
+
+
+  /*utility*/
+  .btn{
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-pry {
+    background-color: var(--primary);
+  }
